@@ -1,0 +1,6 @@
+name = Webform Automate Data Download by Emails
+description = Enables the upload of webform values to "/[supplier]/data-submission-am#"" page from a automated email sent from a specified address and subject, containing a data file in xls or xlsx format.
+core = 7.x
+package = Webform
+dependencies[] = webform
+configure = admin/config/content/webform_autodatadownload
