@@ -1,0 +1,14 @@
+<?php
+
+//import
+//create object to read the file
+$objReader = PHPExcel_IOFactory::createReader('Excel5');
+
+$file_name = "C:\Users\icprbadmin\Documents\R_Scripts\workflow\data\Reservoir_Intake_test.xlsx";
+
+$objPHPExcel = $objReader->load($file_name);
+
+for($i=1;$i <= 20; $i++){
+  echo $objReader[$i];
+}
+?>
