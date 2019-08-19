@@ -17,4 +17,6 @@ $run=1;
 test_function($testing)
 //echo"This script is $testing";
 
+//pull down from this url and plot to demands in coop_drought_tool
+//https://icprbcoop.org/drupal4/products/coop_pot_withdrawals.csv
 ?>
