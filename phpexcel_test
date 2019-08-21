@@ -3,25 +3,22 @@
 require_once 'sites/all/classes/PHPExcel/IOFactory.php';
 
 //create object to read the file
-$objReader = PHPExcel_IOFactory::createReader('Excel2007');
+$objReader = PHPExcel_IOFactory::createReader('Excel5');
+$file_name ='public://webform/submitted/FW_Auto_Daily Withdrawal Report_2017_9_15.xls';
 
-$file_name = "C:\Users\icprbadmin\Documents\R_Scripts\workflow\data\Reservoir_Intake_test.xlsx";
-
-//this line of code is breaking the script
-//usses reader object and filename to assign data to variable
 $objPHPExcel = $objReader->load($file_name);
 
-for($i=1;$i <= 20; $i++){
-  echo $objReader[$i];
-}
+foreach ($objPHPExcel->getWorksheetIterator() as $worksheet) {
+     $arrayData[$worksheet->getTitle()] = $worksheet->toArray();
+       }
 
-//multi dimensional array
-$test_array = array(
-  array("test1",1,11,111),
-  array("test2",2,22,222),
-  array("test3",3,33,333)
-);
+$sheet_names = array_keys($arrayData);
 
-echo"index item 2 is:".$test_array[0][2]
+echo $sheet_names;
+
+$sheet_data = $arrayData[$sheet_name];
+
+echo $sheet_data;
+
 
 ?>
