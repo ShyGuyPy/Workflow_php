@@ -7,7 +7,15 @@ $test_array = array(
   array("test3",3,33,333)
 );
 
-echo"index item 2 is:".$test_array[0][2];
+define("test_con", 2);
+
+echo"index item 2 is:".$test_array[0][test_con];
+
+echo "<br>";
+
+foreach ($test_array as $value) {
+  echo "$value";
+}
 
 echo "<br>";
 //create on object
@@ -29,5 +37,9 @@ echo "<br>";
 echo strlen($random_test_var);
 echo "<br>";
 echo str_word_count($random_test_var);
+
+
+
+
 
 ?>
