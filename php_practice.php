@@ -49,4 +49,12 @@ echo "<br>";
 $random_test_var2 = " of a concat assignment";
 echo $random_test_var.=$random_test_var2;
 
+$run = 1;
+
+if($run){
+  echo "<br>";
+  echo "This should not print unless run is 1";
+}
+
+
 ?>
