@@ -1,0 +1,6 @@
+<?php
+function webform_basin_precip_cron() {
+    require_once 'webform_basin_precip_functions.inc';
+    require_once 'webform_basin_precip.inc';
+    require_once 'webform_basin_precip_json.inc';
+}

@@ -1,0 +1,5 @@
+name = Webform Upload Basin Precipitation
+description = Enables the upload of webform values to "/icprb/manage-precipitation-data" page from a csv file stored in Google spreadsheet named "marfc_precip_test".
+core = 7.x
+package = Webform
+dependencies[] = webform
