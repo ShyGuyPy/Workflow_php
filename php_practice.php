@@ -56,5 +56,10 @@ if($run){
   echo "This should not print unless run is 1";
 }
 
+$today_date = date('Y-m-d',strtotime( 'now' ));
+echo "<br>";
+echo $today_date;
+echo "<br>";
+echo gettype($today_date);
 
 ?>
