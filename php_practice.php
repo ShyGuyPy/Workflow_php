@@ -62,4 +62,9 @@ echo $today_date;
 echo "<br>";
 echo gettype($today_date);
 
+
+$separator = ",";
+$new = impode($test_string, $test_array);
+echo "<br>";
+echo $new;
 ?>
